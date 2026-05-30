@@ -16,7 +16,10 @@ No diagrams yet.
 ## Planned
 
 - System context diagram (control plane and service boundaries)
-- Lifecycle state machine diagram (aligned with [runtime-model.md](../architecture/runtime-model.md))
+
+## Session 1
+
+- [lifecycle-state-machine.md](lifecycle-state-machine.md) — Mermaid state machine (happy path, failure, drift, rollback)
 - Sequence diagram: happy path Train → Monitor
 - Sequence diagram: drift → retrain → promote
 - Sequence diagram: rollback

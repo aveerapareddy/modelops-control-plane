@@ -2,7 +2,7 @@
 
 **Status:** Architecture Phase  
 **Implementation:** Not Started  
-**Current Milestone:** Architecture Foundation
+**Current Milestone:** Lifecycle Runtime Semantics (Session 1)
 
 ## Engineering Thesis
 
@@ -85,13 +85,25 @@ infra/          Database, container, K8s, and observability config
 
 See [docs/overview/project-constitution.md](docs/overview/project-constitution.md) for engineering rules and [docs/architecture/system-overview.md](docs/architecture/system-overview.md) for system design.
 
+Session 1 lifecycle docs: [lifecycle-state-machine.md](docs/architecture/lifecycle-state-machine.md), [transition-rules.md](docs/architecture/transition-rules.md), [event-model.md](docs/architecture/event-model.md).
+
+## Architecture Progress
+
+| Session | Deliverable | Status |
+|---------|-------------|--------|
+| Session 0 | Repository and architecture foundation | Complete (documentation) |
+| Session 1 | Lifecycle runtime semantics | Complete (documentation) |
+| Implementation | Services, APIs, persistence | Not started |
+
+**Current implementation status:** Not Started — no executable lifecycle runtime.
+
 ## Implementation Status
 
 | Area | Status |
 |------|--------|
-| Architecture documentation | In progress (Session 0) |
+| Architecture documentation (Session 0–1) | Complete (documentation only) |
 | Control plane API | Not started |
-| Lifecycle state machine | Not started |
+| Lifecycle state machine | Documented; not implemented |
 | Training orchestration | Not started |
 | Registry service | Not started |
 | Deployment manager | Not started |
@@ -114,6 +126,6 @@ Nothing in this repository executes a lifecycle workflow today.
 
 ## Next Milestone
 
-**Architecture Foundation (current):** Complete normative docs, service boundaries, lifecycle contracts, and repository skeleton.
+**Lifecycle Runtime Semantics (Session 1, current):** States, transitions, events, deployment, and promotion policy documented.
 
-**Next:** Define API contracts and state machine implementation plan; scaffold control plane service with transition validation only (no external integrations).
+**Next (Session 2):** API contract design and control plane scaffold with transition validation only (no external integrations).

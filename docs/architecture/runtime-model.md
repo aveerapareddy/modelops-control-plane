@@ -5,6 +5,8 @@
 
 Planned lifecycle state machine semantics for model versions.
 
+**Session 1 update:** Canonical state machine, transitions, and events are defined in [lifecycle-state-machine.md](lifecycle-state-machine.md), [transition-rules.md](transition-rules.md), and [event-model.md](event-model.md). This document remains Session 0 context; prefer Session 1 docs for new work.
+
 ---
 
 ## Implemented
